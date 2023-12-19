@@ -23,7 +23,7 @@ def main():
 
   # Display predictions
   st.subheader("Predictions")
-  st.write(res['answer'])
+  st.write(res)
 
 if __name__ == "__main__":
   main()
