@@ -1,6 +1,5 @@
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 import streamlit as st
-from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 
 
 model_name = "deepset/roberta-base-squad2"
