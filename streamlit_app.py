@@ -1,6 +1,6 @@
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 import streamlit as st
-
+import pandas as pd
 
 model_name = "deepset/roberta-base-squad2"
 
@@ -23,7 +23,7 @@ def main():
 
   # Display predictions
   st.subheader("Predictions")
-  st.write(res)
+  st.write(res['answer'])
 
 if __name__ == "__main__":
   main()
